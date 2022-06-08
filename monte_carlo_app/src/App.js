@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react'
 import './App.css';
 
 function App() {
+  // usestate hook for the to do list goals (variable and the setting function)
+  const [toDoListGoal, setToDoListGoal] = useState([])
   return (
     <div className="App">
       
