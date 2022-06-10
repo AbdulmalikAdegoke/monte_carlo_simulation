@@ -1,12 +1,13 @@
 import React from 'react'
 
 export default function LogInPage() {
+  // states: LoggedIn
   return (
     <div>
       <div>
         <div>
           <h1>LogIn</h1>
-          <p>Enter your login details here</p>
+          <p id='login_p'>Enter your login details here</p>
           {/* login form */}
           <form>
             <label for="username">User name:</label><br/>

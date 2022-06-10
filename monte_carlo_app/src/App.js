@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   // usestate hook for the to do list goals (variable and the setting function)
-  const [toDoListGoal, setToDoListGoal] = useState([])
+  const [loggedIn, setLoggedIn] = useState(false)
   return (
     <div className="App">
       

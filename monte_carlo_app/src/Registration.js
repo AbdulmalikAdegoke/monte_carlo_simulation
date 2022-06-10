@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "react-router-dom"
 
 export default function RegistrationPage() {
   return (
@@ -6,7 +7,7 @@ export default function RegistrationPage() {
       <div>
         <div>
           <h1>Register</h1>
-          <p>Register your login details here</p>
+          <p id='login_p'>Register your login details here</p>
           {/* registration form */}
           <form>
             <label for="username">User name:</label><br/>
@@ -22,13 +23,13 @@ export default function RegistrationPage() {
                 <label for="rememberme">Remember Me</label>
               </div>
               <div>
-                <a href='#'>Forgot Password?</a>
+                <Link href='#'>Forgot Password?</Link>
               </div>
             </div>
 
             <input type="register" value="Register" />
           </form>
-          <p>Already have an account?<a href='#'>Login</a></p>
+          <p>Already have an account?<Link href='#'>Login</Link></p>
         </div>
         
       </div>
