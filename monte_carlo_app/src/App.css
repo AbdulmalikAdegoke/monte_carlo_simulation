@@ -36,3 +36,83 @@
     transform: rotate(360deg);
   }
 }
+
+/* App Layout styles */
+/* 0500FF */
+
+/* Login Page styles */
+.login_page{
+  width: 100%;
+  background-color: #0500FF;
+  padding: 100px;
+}
+.login_page h1{
+  color: white;
+  font-weight: bold;
+  /* top: 60px; */
+}
+
+.loginform_container{
+  position: absolute;
+  z-index: 1;
+  width: 80%;
+  margin: 0 auto;
+  /* float: right; */
+
+}
+
+/* Desktop and laptop */
+@media only screen and (min-width: 1200px) {
+
+  
+}
+@media only screen and (max-width: 970px) {
+    
+}
+@media only screen and (min-width: 970px) {
+    
+}
+/* Laptop and tablet */
+@media only screen and (min-width: 600px) {
+  .login_page{
+    width: 100%;
+    /* padding: 100px; */
+  }
+  .login_page h1{
+    color: white;
+    font-weight: bold;
+    /* top: 60px; */
+  }
+  
+  .loginform_container{
+    position: absolute;
+    z-index: 1;
+    width: 45%;
+    float: right;
+  
+  }
+
+  
+}
+/* Registration Page styles */
+.registration_page{
+
+}
+.reg_container{
+
+}
+.reg_form_container{
+  
+}
+/* Dashboard Page styles */
+/*  */
+
+/*  */
+
+/*  */
+
+/* History Page styles */
+
+
+/* Profile Page styles */
+

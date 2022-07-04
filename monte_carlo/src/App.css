@@ -1,0 +1,426 @@
+html{
+  height: 100%;
+  /* position: absolute; */
+}
+/* general- multi component styles */
+.register_a, .forgot_p_a, .login_a{
+  color: #0500FF;
+}
+.register_a:hover, .forgot_p_a:hover, .login_a:hover{
+  cursor: pointer;
+}
+
+/* App Layout styles */
+/* 0500FF */
+.bodyContainer{
+  width: 100%;
+  height: 100%;
+}
+/* Login Page styles */
+.loginpage_div{
+  background-color: #0500FF;
+  padding: 20px;
+  position: absolute;
+  z-index: -1;
+  /* width: 100%; */
+  /* height: 100%; */
+  visibility:hidden;
+}
+.login_page{
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-color: #0500FF;
+  padding: 50px;
+  /* display:inline; */
+}
+.login_page h1{
+  color: white;
+  font-weight: bold;
+  /* top: 60px; */
+  /* position: absolute;
+  z-index: 1; */
+}
+/* Label{
+  font-weight: bold;
+} */
+Input[type=text]{
+  /* padding: 200px; */
+}
+.loginform_container{
+  
+  width: 80%;
+  margin: 0 auto;
+  /* float: right; */
+  background-color: white;
+  padding: 100px;
+
+}
+.loginform{
+  width: 100%;
+}
+.remember_me{
+  float: left;
+  width: 50%;
+}
+.forgot_password{
+  width: 50%;
+  float: right;
+  text-align: right;
+  
+}
+.login_button{
+  width: 100%;
+}
+p .login_p{
+  text-align: left;
+}
+.loginform_container p{
+  text-align: center;
+}
+
+Button{
+  width: 100%;
+  padding: 50px;
+}
+img.stock_img{
+  /* height:500px; */
+  width: 100%;
+  height: 90%;
+  /* top:50%;
+  bottom: 50%; */
+  /* float:right; */
+  /* border-radius: 20%; */
+  
+  
+}
+
+.loginform_div h1{
+  color: black;
+}
+
+/* Desktop and laptop */
+@media only screen and (min-width: 1200px) {
+  .loginpage_div{
+    float: left;
+    padding: 100px;
+    padding-right: 0;
+  }
+  /* .loginform_container{
+    padding: 150px;
+  
+  } */
+}
+@media only screen and (max-width: 970px) {
+  
+}
+@media only screen and (min-width: 970px) {
+  
+}
+/* Laptop and tablet */
+@media only screen and (min-width: 970px) {
+  .loginpage_div{
+    width: 55%;
+    float: left;
+    padding: 50px;
+    padding-right: 0;
+    height: 100%;
+    visibility:visible;
+  }
+  .login_page{
+    width: 100%;
+    padding: 0;
+    /* padding: 100px; */
+  }
+  .login_page h1{
+    color: white;
+    font-weight: bold;
+    /* top: 60px; */
+  }
+  .loginform{
+    margin: 0 auto;
+  }
+  .loginform_container{
+    background-color: white;
+    width: 45%;
+    /* position: absolute;
+    z-index: 1; */
+    float: right;
+    padding: 10%;
+    height: 100%;
+    /* padding-top: 10%;
+    padding-bottom: 10%; */
+  
+  }
+
+  img.stock_img{
+    width:85%;
+    height:90%;
+    top: 50%;
+    bottom: 50%;
+    float:right;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+  }
+  .loginform_div{
+    display: none;
+  }
+
+  
+}
+/* Registration Page styles */
+.registration_page{
+  /* position: absolute;
+  z-index: -2; */
+  width: 100%;
+  height: 100vh;
+  /* background-color: #0500FF; */
+  /* padding: 50px; */
+}
+
+.registration_form_container{
+  width: 65%;
+  height: 100vh;
+  /* margin: 0 auto; */
+  /* float: right; */
+  background-color: white;
+  padding: 100px;
+  float: left;
+}
+.registration_form_container p{
+  text-align: center;
+}
+.registration_form{
+  width: 55%;
+}
+.registration_form h1{
+  color: #0500FF;
+  font-weight: bold;
+}
+.registration_form h2{
+  font-weight: bold;
+}
+.registrationpage_div{
+  width: 35%;
+  background-color: #0500FF;
+  position: relative;
+}
+.registrationpage_div .stock_img{
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.registration_confirmation_p{
+  color: green;
+
+}
+/* Desktop and laptop */
+@media only screen and (min-width: 1200px) {
+  .registrationpage_div{
+    float: right;
+    padding: 100px;
+    height: 100%;
+    /* padding-right: 0; */
+  }
+  /* .loginform_container{
+    padding: 150px;
+  
+  } */
+  
+}
+@media only screen and (max-width: 970px) {
+  .registrationpage_div{
+    float: right;
+    padding: 100px;
+    /* padding-right: 0; */
+  }
+  /* .loginform_container{
+    padding: 150px;
+  
+  } */
+  
+}
+/* Layout styles */
+.layout_container{
+  background-color: #EDEDED;
+  width: 100%;
+  min-height: 100vh;
+  display: inline-block;
+  overflow-y:scroll;
+}
+.nav_pages{
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+
+}
+
+ul{
+  /* padding: 10px; */
+  /* padding-left: 10px; */
+  width: 20%;
+  float: left; 
+  height: 100vh;
+  background-color: white;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+  position: fixed;
+}
+ul h1{
+  color: #0500FF;
+  font-weight: bold;
+  /* margin-top: 30px; */
+  margin-bottom: 60px;
+}
+li{
+  /* width: 30%; */
+  width: 100%;
+  margin: 0 auto;
+  /* padding: 10px; */
+}
+li.active{
+  background-color: rgb(209, 209, 250);
+  border-radius: 10%;
+}
+a{
+  font-weight: bold;
+  color: #0500FF;
+}
+button.logOutButton{
+  width: 30%;
+  
+  background-color:#EDEDED;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #0500FF;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5%;
+  margin: 0 auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  left: 0;
+  right: 0;
+}
+button.logOutButton:hover{
+  background-color: rgb(160, 160, 160);
+}
+
+.layout_body_container{
+  width: 75%;
+  float: right;
+  /* min-height: 70%; */
+  height: 100vh;
+}
+.layout_top_nav{
+  width: 100%;
+  /* float: right; */
+  /* padding-top: 40px; */
+  padding: 15px;
+  text-align: right;
+  background-color: white;
+  margin-bottom: 50px;
+}
+.outlet_Container{
+  width: 100%;
+  /* float: right; */
+  /* padding-top: 40px; */
+  padding: 80px;
+  /* text-align: right; */
+  background-color: white;
+  display: inline-block;
+  min-height: 80%;
+  position: relative;
+}
+.outlet_Container h2{
+  font-weight: bold;
+}
+.outlet_Container label{
+  font-weight: bold;
+}
+/* .outlet_Container #projectDescription{
+  height: 40%;
+} */
+/* Nav{
+  padding: 20px;
+ width: 20%;
+ float: left; 
+} */
+
+/* Dashboard Page styles */
+/* .formStep{ */
+  /* width:20%; */
+  /* text-align: center; */
+/* } */
+.formProgressDiv{
+  width: 100%;
+  height: 25%;
+}
+#numContainer{
+  /* width: 20px; */
+  border: 1px solid #cecece;
+  border-radius: 48%; 
+  /* width: 20%; */
+  /* width:  */
+  /* width: 20px; */
+  color: #cecece;
+  margin-right: 5px;
+  
+ 
+ padding: 11px;
+}
+.lines{
+  display:inline-block;
+  width: 25%;
+  border-top: 1px solid rgb(78, 78, 78);
+  margin: 0 5px;
+}
+.multiForm{
+  font-weight: bold;
+  /* overflow-wrap: break-word;
+  word-wrap: break-word; */
+}
+.formContent{
+  height: 60%;
+}
+.formContent #projectDescription{
+  height: 60%;
+}
+/*  */
+
+
+/*  */
+.projectActions:hover{
+  cursor: pointer;
+
+}
+
+/*  */
+
+
+/* History Page styles */
+tr th{
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Profile Page styles */
+
+.profile_image{
+  text-align: center;
+}
+button.edit_profile_button{
+  width: 15%;
+}
+.footer{
+  width: 70%;
+  /* display: inline-block; */
+  position: absolute;
+  bottom: 5%;
+}
