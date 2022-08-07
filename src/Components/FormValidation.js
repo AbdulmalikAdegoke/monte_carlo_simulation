@@ -67,7 +67,7 @@ const riskValidation= Yup.string()
 
 // exporting the form validation  module to be used across the app
 // for fields (input fields)
-export const loginFormValidation = Yup.object({
+export const loginFormValidation= Yup.object({
 
     emailAddress: emailAddressValidation,
 
