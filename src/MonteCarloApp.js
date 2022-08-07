@@ -15,6 +15,9 @@ export default function MonteCarloApp() {
     <div>
         <BrowserRouter>
             <Routes>
+                {/* <Route path="login" element={<LogIn userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
+                <Route path="registration" element={<Registration userProfile={currentlyLoggedInUser} />} />
+                <Route path="forgottenPassword" element={<ForgottenPassword userProfile={currentlyLoggedInUser} formValidation={formValidation} />} /> */}
                 {/* <Route path="/" element={<Layout toggleLogInState={toggleLogInState} userProfile={currentlyLoggedInUser} />}>
                     <Route index element={<Dashboard userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
                     <Route path="history" element={<History userProfile={currentlyLoggedInUser} />} />
