@@ -1,10 +1,11 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import MonteCarloApp from './MonteCarloApp';
 
 function App() {
+  
   return (
     <div className="App">
-      
+      <MonteCarloApp />
     </div>
   );
 }
