@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function FormField() {
+export default function FormFields() {
   return (
     <div>
         
