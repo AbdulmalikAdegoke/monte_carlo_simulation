@@ -1,7 +1,7 @@
 import React from 'react'
-import FormFields from '../Components/FormFields'
+import FormFields from '../Components/FormComponents/FormFields'
 
-export default function History() {
+export default function History({}) {
   return (
     <div>
         

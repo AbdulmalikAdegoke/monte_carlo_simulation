@@ -1,8 +1,8 @@
 import React from 'react'
 import {profileFormValidation} from "./Components/FormValidation"
-import FormFields from '../Components/FormFields'
+import FormFields from '../Components/FormComponents/FormFields'
 
-export default function Profile() {
+export default function Profile({}) {
   return (
     <div>
         

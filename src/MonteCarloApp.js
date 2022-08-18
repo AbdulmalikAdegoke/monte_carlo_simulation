@@ -12,19 +12,21 @@ import Profile from "./Pages/Profile.js"
 import ErrorPage from "./Pages/ErrorPage.js"
 
 export default function MonteCarloApp() {
+
   return (
     <div>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<></>}>
+                <Route path="/" element={<BaseLayout toggleLogInState={toggleLogInState} userProfile={currentlyLoggedInUser}}
+                // element={<></>}
+                >
                     {/* <Route index element={<LogIn userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
                     <Route path="registration" element={<Registration userProfile={currentlyLoggedInUser} />} />
                     <Route path="forgottenPassword" element={<ForgottenPassword userProfile={currentlyLoggedInUser} formValidation={formValidation} />} /> */}
                     {/* <Route path="monteCarloApp/" element={<Layout toggleLogInState={toggleLogInState} userProfile={currentlyLoggedInUser} />}>
-                        <Route index element={<Dashboard userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
+                        <Route path="dashboard" element={<Dashboard userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
                         <Route path="history" element={<History userProfile={currentlyLoggedInUser} />} />
                         <Route path="profile" element={<Profile userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
-                        <Route path="*" element={<ErrorPage userProfile={currentlyLoggedInUser} />} />
                     </Route> */}
                 </Route>
             </Routes>
