@@ -9,7 +9,7 @@ import BaseLayout from './Pages/BaseLayout.js'
 import Dashboard from "./Pages/Dashboard.js"
 import History from "./Pages/History.js"
 import Profile from "./Pages/Profile.js"
-import ErrorPage from "./Pages/ErrorPage.js"
+// import ErrorPage from "./Pages/ErrorPage.js"
 
 export default function MonteCarloApp() {
 
@@ -17,17 +17,16 @@ export default function MonteCarloApp() {
     <div>
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<BaseLayout toggleLogInState={toggleLogInState} userProfile={currentlyLoggedInUser}}
+                <Route path="monteCarloApp/" element={<BaseLayout toggleLogInState={toggleLogInState} userProfile={()=>{}}  }
+                //{currentlyLoggedInUser}}
                 // element={<></>}
                 >
-                    {/* <Route index element={<LogIn userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
+                    <Route index element={<LogIn userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
                     <Route path="registration" element={<Registration userProfile={currentlyLoggedInUser} />} />
-                    <Route path="forgottenPassword" element={<ForgottenPassword userProfile={currentlyLoggedInUser} formValidation={formValidation} />} /> */}
-                    {/* <Route path="monteCarloApp/" element={<Layout toggleLogInState={toggleLogInState} userProfile={currentlyLoggedInUser} />}>
-                        <Route path="dashboard" element={<Dashboard userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
-                        <Route path="history" element={<History userProfile={currentlyLoggedInUser} />} />
-                        <Route path="profile" element={<Profile userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
-                    </Route> */}
+                    <Route path="forgottenPassword" element={<ForgottenPassword userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
+                    <Route path="dashboard" element={<Dashboard userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
+                    <Route path="history" element={<History userProfile={currentlyLoggedInUser} />} />
+                    <Route path="profile" element={<Profile userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
                 </Route>
             </Routes>
         </BrowserRouter>

@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function BaseLayout({}) {
+// the layout that is shared by most of the app's page
+export default function BaseLayout({ pageType }) {
   return (
     <div>
         
