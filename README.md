@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+About the project:
+The project is an app that runs the Monte Carlo Simulation
+
+Project Structure:
+Assets: folder contains images and icons
+
+Components: folder contains all the components of the apps
+- FormComponents: sub folder containing the form components for the app's forms
+
+- PageComponents: sub folder containing the various components to be rendered on all the pages of the app
+
+
+EntryPoint: folder contains 
+
+Pages: folder contains 
+
+Styling: folder contains 
+
+MonteCarloApp.js-

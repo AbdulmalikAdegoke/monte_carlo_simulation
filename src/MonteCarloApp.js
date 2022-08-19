@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import LogIn from "./EntryPoint/LogIn.js"
@@ -12,12 +12,14 @@ import Profile from "./Pages/Profile.js"
 // import ErrorPage from "./Pages/ErrorPage.js"
 
 export default function MonteCarloApp() {
+  // entry point state
+  const [entryPointPage, setEntryPointPage] = useState(true)
 
   return (
     <div>
         <BrowserRouter>
             <Routes>
-                <Route path="monteCarloApp/" element={<BaseLayout toggleLogInState={toggleLogInState} userProfile={()=>{}}  }
+                <Route path="monteCarloApp/" element={<BaseLayout entryPointPage={entryPointPage} toggleLogInState={toggleLogInState} userProfile={()=>{}} />}
                 //{currentlyLoggedInUser}}
                 // element={<></>}
                 >
