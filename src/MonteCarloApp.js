@@ -19,16 +19,18 @@ export default function MonteCarloApp() {
     <div>
         <BrowserRouter>
             <Routes>
-                <Route path="monteCarloApp/" element={<BaseLayout entryPointPage={entryPointPage} toggleLogInState={toggleLogInState} userProfile={()=>{}} />}
+                <Route path="/monteCarloApp" element={<BaseLayout entryPointPage={entryPointPage} userProfile={()=>{}} />}
                 //{currentlyLoggedInUser}}
-                // element={<></>}
                 >
-                    <Route index element={<LogIn userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
-                    <Route path="registration" element={<Registration userProfile={currentlyLoggedInUser} />} />
-                    <Route path="forgottenPassword" element={<ForgottenPassword userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
-                    <Route path="dashboard" element={<Dashboard userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
-                    <Route path="history" element={<History userProfile={currentlyLoggedInUser} />} />
-                    <Route path="profile" element={<Profile userProfile={currentlyLoggedInUser} formValidation={formValidation} />} />
+                    {/* Entry Point */}
+                    <Route index element={<LogIn userProfile={currentlyLoggedInUser} />} />
+                    <Route path="/registration" element={<Registration userProfile={currentlyLoggedInUser} />} />
+                    <Route path="/forgottenPassword" element={<ForgottenPassword userProfile={currentlyLoggedInUser} />} />
+
+                    {/* Within the app */}
+                    <Route path="/dashboard" element={<Dashboard userProfile={currentlyLoggedInUser} />} />
+                    <Route path="/history" element={<History userProfile={currentlyLoggedInUser} />} />
+                    <Route path="/profile" element={<Profile userProfile={currentlyLoggedInUser} />} />
                 </Route>
             </Routes>
         </BrowserRouter>
