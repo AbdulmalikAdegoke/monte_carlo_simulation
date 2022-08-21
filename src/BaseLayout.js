@@ -22,7 +22,6 @@ export default function BaseLayout({ toggleLogInState, loggedIn, userProfile }) 
     <>
       {loggedIn?
       <div>
-
       </div>
       :
       <div className='layout_container'>
@@ -35,25 +34,25 @@ export default function BaseLayout({ toggleLogInState, loggedIn, userProfile }) 
             <div className='nav_pages'>
                 <NavItem active={currentHref.pathname ==="/"?true:false}>
                     <NavLink href="/">
-                        <img src={require('./home_icon.png')} alt='Home stock' style={{width:"30px"}} />
+                        <img src={require('./Assets/home_icon.png')} alt='Home stock' style={{width:"30px"}} />
                         <br />
                         Home
                     </NavLink>
                 </NavItem>
                 {' '}
                 <br />
-                <NavItem active={currentHref.pathname ==="/history"?true:false}>
-                    <NavLink href="/history">
-                        <img src={require('./history_icon.png')} alt='History stock' style={{width:"30px"}} />
+                <NavItem active={currentHref.pathname ==="/monteCarloApp/history"?true:false}>
+                    <NavLink href="/monteCarloApp/history">
+                        <img src={require('./Assets/history_icon.png')} alt='History stock' style={{width:"30px"}} />
                         <br />
                         History
                     </NavLink>
                 </NavItem>
                 {' '}
                 <br />
-                <NavItem active={currentHref.pathname ==="/profile"?true:false}>
-                    <NavLink href="/profile">
-                        <img src={require('./profile_icon.png')} alt='Profile stock' style={{width:"30px"}} />
+                <NavItem active={currentHref.pathname ==="/monteCarloApp/profile"?true:false}>
+                    <NavLink href="/monteCarloApp/profile">
+                        <img src={require('./Assets/profile_icon.png')} alt='Profile stock' style={{width:"30px"}} />
                         <br />
                         Profile
                     </NavLink>
@@ -65,14 +64,14 @@ export default function BaseLayout({ toggleLogInState, loggedIn, userProfile }) 
             {' '}
 
             <Button onClick={logOutConfirmation} className='logOutButton' >
-                <img src={require('./logout_icon_.png')}  alt='Logout stock' style={{width:"30px"}} />
+                <img src={require('./Assets/logout_icon_.png')}  alt='Logout stock' style={{width:"30px"}} />
                 <br />
                 Logout
             </Button>
         </Nav>
         <div className='layout_body_container'>
             <div className='layout_top_nav'>
-                <img src={require('./profile.png')} alt='Profile stock' style={{width:"50px",borderRadius:"50%"}} />
+                <img src={require('./Assets/profile.png')} alt='Profile stock' style={{width:"50px",borderRadius:"50%"}} />
                 <h2>{userProfile.firstName}</h2>
             </div>
             <Outlet />
